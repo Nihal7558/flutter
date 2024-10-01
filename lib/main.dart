@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:homepage/24-9-24/login.dart';
+import 'package:homepage/30-9-24/page1.dart';
+import 'package:homepage/30-9-24/page2.dart';
 import 'package:homepage/firstUi/myCart.dart';
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Login(),
+      home: Page2(),
     );
   }
 }

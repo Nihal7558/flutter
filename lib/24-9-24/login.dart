@@ -10,6 +10,8 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  TextEditingController emailcontroller = TextEditingController();
+  TextEditingController passwordcontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,14 +50,15 @@ class _LoginState extends State<Login> {
                       Text(
                         "Email",
                         style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w400,
-                            fontFamily: "poppins"),
+                          fontSize: 15,
+                          fontWeight: FontWeight.w400,
+                        ),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       TextFormField(
+                        controller: emailcontroller,
                         decoration: InputDecoration(
                             prefixIcon: Icon(
                               Icons.email_outlined,
@@ -82,6 +85,7 @@ class _LoginState extends State<Login> {
                         height: 10,
                       ),
                       TextFormField(
+                        controller: passwordcontroller,
                         obscureText: true,
                         decoration: InputDecoration(
                             prefixIcon: Icon(
