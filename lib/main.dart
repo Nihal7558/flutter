@@ -6,6 +6,7 @@ import 'package:homepage/bookingApp/bookingPage.dart';
 import 'package:homepage/bookingApp/firstPage.dart';
 import 'package:homepage/buttons/sample.dart';
 import 'package:homepage/firstUi/myCart.dart';
+import 'package:homepage/profile%20page%20layout/imagePicker.dart';
 import 'package:homepage/profile%20page/profile.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Firstpage(),
+      home: ImagepickerEx(),
     );
   }
 }
