@@ -42,7 +42,7 @@ class _bottombarexampleState extends State<bottombarexample> {
         ],
         showSelectedLabels: true,
         selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.red,
+        unselectedItemColor: Colors.grey,
         enableFeedback: true,
         currentIndex: index,
         onTap: _onitemtapped,
