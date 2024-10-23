@@ -18,7 +18,7 @@ class _ProviderExState extends State<ProviderEx> {
     final providerGetter = Provider.of<ProviderServices>(context);
 
     return Scaffold(
-      backgroundColor: Color(0xff013D6A),
+      backgroundColor: const Color.fromARGB(255, 241, 237, 237),
       appBar: AppBar(
         backgroundColor: Color(0xff0070af),
         title: Row(

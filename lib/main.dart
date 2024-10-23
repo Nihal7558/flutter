@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:homepage/24-9-24/home.dart';
 import 'package:homepage/24-9-24/login.dart';
 import 'package:homepage/30-9-24/page1.dart';
@@ -9,6 +10,8 @@ import 'package:homepage/bookingApp/bookingPage.dart';
 import 'package:homepage/bookingApp/firstPage.dart';
 import 'package:homepage/buttons/sample.dart';
 import 'package:homepage/firstUi/myCart.dart';
+import 'package:homepage/getx/AddProfile.dart';
+import 'package:homepage/getx/getfrom.dart';
 import 'package:homepage/profile%20page%20layout/imagePicker.dart';
 import 'package:homepage/profile%20page/profile.dart';
 import 'package:homepage/shared%20preference/example.dart';
@@ -28,14 +31,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: ProviderEx(),
-    );
+    return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: UserMngGet());
   }
 }
