@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:homepage/23-10-24%20task/homepage.dart';
 import 'package:homepage/24-9-24/home.dart';
 import 'package:homepage/24-9-24/login.dart';
 import 'package:homepage/30-9-24/page1.dart';
@@ -38,6 +39,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: UserMngGet());
+        home: Homepageexa());
   }
 }
