@@ -5,6 +5,7 @@ import 'package:homepage/24-9-24/home.dart';
 import 'package:homepage/24-9-24/login.dart';
 import 'package:homepage/30-9-24/page1.dart';
 import 'package:homepage/30-9-24/page2.dart';
+import 'package:homepage/List%20App/home.dart';
 import 'package:homepage/User%20management%20app/provider_services.dart';
 import 'package:homepage/User%20management%20app/provider_view.dart';
 import 'package:homepage/bookingApp/bookingPage.dart';
@@ -39,6 +40,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Homepageexa());
+        home: HomeDemo());
   }
 }

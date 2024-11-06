@@ -25,6 +25,11 @@ class Homepageexa extends StatelessWidget {
                       final data = controller.DataList[i];
                       return Card(
                           child: ListTile(
+                              subtitle: Text(data.model!.rate.toString()),
+                              leading: CircleAvatar(
+                                backgroundImage:
+                                    NetworkImage(data.image.toString()),
+                              ),
                               title: Text(data.title.toString() ?? "")));
                     });
           })),
