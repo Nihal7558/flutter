@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:homepage/List%20App/dataController.dart';
-import 'package:homepage/List%20App/modelex.dart';
+import 'package:homepage/MVVM/model/services/dataController.dart';
+import 'package:homepage/MVVM/view_model/modelex.dart';
 import 'package:http/http.dart' as http;
 
 class Apiservice {
@@ -10,7 +10,7 @@ class Apiservice {
     var response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
       var body = await json.decode(response.body);
-      List<dynamic> user = body['users'];
+      List<dynamic> user = body["users"];
       print(body);
       List<Datamodelexa> users = [];
       for (var item in user) {

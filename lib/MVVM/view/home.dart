@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:homepage/List%20App/dataController.dart';
+import 'package:homepage/MVVM/model/services/dataController.dart';
 
 class HomeDemo extends StatelessWidget {
   HomeDemo({super.key});
@@ -10,6 +10,7 @@ class HomeDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 44, 77, 223),
         title: Row(

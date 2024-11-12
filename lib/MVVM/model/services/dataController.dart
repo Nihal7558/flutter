@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:homepage/23-10-24%20task/model.dart';
-import 'package:homepage/List%20App/apiService.dart';
-import 'package:homepage/List%20App/modelex.dart';
+import 'package:homepage/MVVM/model/services/apiService.dart';
+import 'package:homepage/MVVM/view_model/modelex.dart';
 
 class datacontrollerexam extends GetxController {
   var DataList = <Datamodelexa>[].obs;
